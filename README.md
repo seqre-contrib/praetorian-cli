@@ -150,7 +150,7 @@ script to have a concrete look at the content of those arguments, using the foll
 of your cloned repository:
 
  ```zsh
-praetorian chariot list risks --details --script hello-world
+praetorian chariot list seeds --details --script hello-world
 ```
 
 A typical script use the arguments in the following manners:
