@@ -1,15 +1,15 @@
 import click
 
-import praetorian_cli.handlers.add  # noqa
-import praetorian_cli.handlers.delete  # noqa
-import praetorian_cli.handlers.get  # noqa
-import praetorian_cli.handlers.link  # noqa
-import praetorian_cli.handlers.list  # noqa
-import praetorian_cli.handlers.search  # noqa
-import praetorian_cli.handlers.test  # noqa
-import praetorian_cli.handlers.unlink  # noqa
-import praetorian_cli.handlers.update  # noqa
-from praetorian_cli.handlers.chariot import chariot
+import praetorian_cli.handlers.actions.add  # noqa
+import praetorian_cli.handlers.actions.delete  # noqa
+import praetorian_cli.handlers.actions.get  # noqa
+import praetorian_cli.handlers.actions.link  # noqa
+import praetorian_cli.handlers.actions.list  # noqa
+import praetorian_cli.handlers.actions.search  # noqa
+import praetorian_cli.handlers.actions.test  # noqa
+import praetorian_cli.handlers.actions.unlink  # noqa
+import praetorian_cli.handlers.actions.update  # noqa
+from praetorian_cli.handlers.products import chariot
 from praetorian_cli.sdk.keychain import Keychain
 
 

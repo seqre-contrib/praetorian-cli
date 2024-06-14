@@ -2,8 +2,8 @@ import os
 
 import click
 
-from praetorian_cli.handlers.chariot import chariot
-from praetorian_cli.handlers.cli_decorators import cli_handler
+from praetorian_cli.handlers.products import chariot
+from praetorian_cli.handlers.utils.cli_decorators import cli_handler
 
 
 @chariot.command('test')

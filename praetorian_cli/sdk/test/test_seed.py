@@ -2,7 +2,7 @@ import time
 
 import pytest
 
-from praetorian_cli.handlers.utils import Asset
+from praetorian_cli.sdk.constants import Asset
 from praetorian_cli.sdk.test import BaseTest
 from praetorian_cli.sdk.test.utils import Utils
 

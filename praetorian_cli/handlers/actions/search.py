@@ -1,8 +1,8 @@
 import click
 
-from praetorian_cli.handlers.chariot import chariot
-from praetorian_cli.handlers.cli_decorators import cli_handler, page_options, scripts
-from praetorian_cli.handlers.utils import paginate
+from praetorian_cli.handlers.products import chariot
+from praetorian_cli.handlers.utils.cli_decorators import cli_handler, page_options, scripts
+from praetorian_cli.handlers.utils.utils import paginate
 
 
 @chariot.command('search')

@@ -90,7 +90,9 @@ def process_with_script(script_name, output, cli_kwargs):
         if hasattr(script_module, 'process') and len(signature(script_module.__dict__['process']).parameters) == 4:
             ctx = click.get_current_context()
             controller = ctx.obj
-            if ctx.command.name == 'search':
+            if ctx.parent.command.name == 'cli':
+                cmd = dict(product=ctx.command.name, action=None, type=None)
+            if ctx.parent.parent.command.name == 'cli':
                 cmd = dict(product=ctx.parent.command.name, action=ctx.command.name, type=None)
             else:
                 cmd = dict(product=ctx.parent.parent.command.name, action=ctx.parent.command.name,

@@ -2,7 +2,6 @@ import click
 
 from praetorian_cli.sdk.chariot import Chariot
 
-
 @click.group()
 @click.pass_context
 def chariot(ctx):

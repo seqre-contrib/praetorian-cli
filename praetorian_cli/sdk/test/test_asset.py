@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 import pytest
 import requests
 
-from praetorian_cli.handlers.utils import Asset
+from praetorian_cli.sdk.constants import Asset
 from praetorian_cli.sdk.test import BaseTest
 
 
