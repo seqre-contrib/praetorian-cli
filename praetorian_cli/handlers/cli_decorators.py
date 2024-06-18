@@ -39,7 +39,7 @@ def status_options(status_choices):
     def decorator(func):
         func = cli_handler(func)
         func = click.option('-status', '--status', type=click.Choice([s.value for s in status_choices]), required=False,
-                            help="Status of the object")(func)
+                            default=list(status_choices)[0].value, help="Status of the object")(func)
         func = click.option('-comment', '--comment', default="", help="Add a comment")(func)
         return func
 
