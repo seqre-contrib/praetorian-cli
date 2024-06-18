@@ -49,7 +49,7 @@ def webhook(controller):
 
 @add.command('risk')
 @click.argument('name', required=True)
-@click.option('-key', '--key', required=True, help='Key of the related asset')
+@click.option('-key', '--key', required=True, help='Key of an existing asset')
 @status_options(Status['risk'])
 def risks(controller, name, key, status, comment):
     """ Add a risk"""
@@ -58,7 +58,7 @@ def risks(controller, name, key, status, comment):
 
 @add.command('job')
 @click.argument('capability', required=True)
-@click.option('-key', '--key', required=True, help='Key of the related asset')
+@click.option('-key', '--key', required=True, help='Key of an existing asset')
 @status_options(Status['job'])
 def jobs(controller, capability, key, status, comment):
     """ Add a job"""
@@ -68,7 +68,7 @@ def jobs(controller, capability, key, status, comment):
 @add.command('attribute')
 @cli_handler
 @click.argument('name', required=True)
-@click.option('-key', '--key', required=True, help='Key of the related asset')
+@click.option('-key', '--key', required=True, help='Key of an existing asset')
 @click.option('-class', '--class', 'clss', default="", help='Class of the attribute')
 def attributes(controller, name, key, clss):
     """ Add an attribute"""
